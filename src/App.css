@@ -1,28 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 .App {
   text-align: center;
+  padding-top: 50px;
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
+}
+.icons{
+  height: 6vmin;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 15s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
@@ -36,3 +31,19 @@
     transform: rotate(360deg);
   }
 }
+p{
+  color: #282c34;
+}
+
+
+*::selection {
+  background: #727272f2;
+  color: aqua;
+}
+a::selection {
+  color: yellow;
+}
+img::selection {
+  background-color: transparent;
+}
+

@@ -1,0 +1,38 @@
+.c-author {
+  color: #404040;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.c-author__link {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+.c-author__link::before,
+.c-author__link::after {
+  bottom: 0;
+  content: "";
+  height: 8px;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+.c-author__link::before {
+  background-color: rgba(64, 64, 64, 0.15);
+  width: 100%;
+}
+.c-author__link::after {
+  background-color: #f4b13e;
+  transition: width 0.3s ease-in-out;
+  width: 0;
+  will-change: width;
+}
+.c-author__link:hover::after {
+  width: 100%;
+}
+
+.c-author__link-light{
+  color: yellow;
+}
